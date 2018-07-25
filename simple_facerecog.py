@@ -73,6 +73,7 @@ def who_is_it(image, database, model):
 
 
 database = prepare_database()
+#create folder testimages and place images to be recognised in it
 for file in glob.glob("testimages/*"):
 	print("file name is "+file)
 	answer = who_is_it(file,database,FRmodel)
